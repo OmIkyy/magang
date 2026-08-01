@@ -1,0 +1,6 @@
+{
+  "name": "Jurnal Magang Digital",
+  "description": "Aplikasi Rekapitulasi Jurnal dan Absensi Magang Siswa dengan Ekspor PDF, Akses Guru, Companion Game, dan Efek Suara",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

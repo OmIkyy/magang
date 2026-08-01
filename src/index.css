@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #fdf5e6;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  input, select, textarea {
+    color: #2d2d2d;
+  }
+}
+
+.dark input, .dark select, .dark textarea {
+  color: #f4f4f5 !important;
+}
+
+.game-card {
+  border: 3px solid #2d2d2d;
+  box-shadow: 6px 6px 0px #2d2d2d;
+  transition: all 0.2s ease;
+}
+
+.game-card-sm {
+  border: 2px solid #2d2d2d;
+  box-shadow: 4px 4px 0px #2d2d2d;
+}
+
+.game-card-hover:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0px #2d2d2d;
+}
+
+.btn-pixel {
+  position: relative;
+  border: 3px solid #2d2d2d;
+  box-shadow: 4px 4px 0px #2d2d2d;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.btn-pixel:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0px #2d2d2d;
+}
+
+.btn-pixel:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #2d2d2d;
+}
+
+.bg-grid {
+  background-image: radial-gradient(#cbd5e1 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+}
+
+.dark .bg-grid {
+  background-image: radial-gradient(#334155 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+}
+
+.character-pulse {
+  animation: pulse-custom 2.5s infinite ease-in-out;
+}
+
+@keyframes pulse-custom {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
